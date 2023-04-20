@@ -8,5 +8,5 @@ function getAdvice (){
         .then(data =>  {advice.textContent = data.slip.advice})
         .catch(error => console.error(error)); 
 }
-button.addEventListener('click', getAdvice);
+button.addEventListener('click', getAdvice) ;
 
