@@ -19,8 +19,68 @@
 
 body{
     font-family: 'Manrope', sans-serif;
+    background-color: var(--dark-blue);
+    height: 100vh;
 }
 
 .box{
-    
+    margin: 10rem auto;
+    width: clamp(20rem, 50vw, 32rem);
+    height: 20rem;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1)
+}
+
+.wrapper{
+    width: clamp(12rem, 80%, 28rem);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* position: absolute; */
+}
+
+.advice{
+    font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+    margin: 1.5rem 0;
+    text-align: center;
+    color: var(--light-cyan);
+}
+.advice-title{
+    letter-spacing: 4px;
+    color: var(--light-green);
+    font-size: .9rem;
+}
+
+.divider{
+    width: clamp(12rem, 100%, 28rem);
+    margin: 0 auto;
+}
+
+button{
+    width: clamp(2.5rem, 10vw, 3.5rem);
+    height: clamp(2.5rem, 10vw, 3.5rem);
+    border-radius: 50%;
+    background: var(--light-green);
+    border: none;
+    position: absolute;
+    bottom: -1.8rem;
+}
+button:hover{
+    box-shadow: 0px 0px 15px 5px hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+.icon{
+    width: 1.33rem;
+}
+
+@media (max-width: 500px) {
+    button {
+      width: calc(5vw + 14%);
+      height: calc(5vw + 14%);
+    }
 }
